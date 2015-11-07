@@ -262,7 +262,9 @@ object EditSession extends js.Object {
 
 @JSName("AceAjax.Editor")
 class Editor protected () extends js.Object {
+  // new methods added by kaiyin
   def setOptions(opts: js.Object): Unit = js.native
+  def on(event: String, fn: js.Function1[js.Any, Any]): Unit = js.native
   def this(renderer: VirtualRenderer, session: IEditSession = ???) = this()
   def addEventListener(ev: String, callback: js.Function): js.Dynamic = js.native
   var inMultiSelectMode: Boolean = js.native
