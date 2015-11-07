@@ -1,8 +1,3 @@
-import xerial.sbt.Sonatype.SonatypeKeys
-import SonatypeKeys._
-
-sonatypeSettings
-
 lazy val root = project.in(file(".")).
   enablePlugins(ScalaJSPlugin)
 
